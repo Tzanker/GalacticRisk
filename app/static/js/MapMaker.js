@@ -1,5 +1,4 @@
-import "../js/bootstrap.js";
-
+import "./bootstrap.js";
 class palleteMode {
     constructor(color, mode) {
         this.color = color;
@@ -75,16 +74,18 @@ function makePath(system1, system2, color){
 }
 
 var line, isDown;
+$('map').load("/static/Map1.html");
 
-var cw = $('color').width();
-$('color').css({'height': cw + 'px'});
-var cw = $('system').width();
-$('system').css({'height': cw + 'px'});
+
 
 
 
 
 $(document).ready(function (e) {
+    var cw = $('color').width();
+        $('color').css({'height': cw + 'px'});
+    var cw = $('system').width();
+        $('system').css({'height': cw + 'px'});
     $(window).on('resize', function (e) {
         var cw = $('color').width();
         $('color').css({'height': cw + 'px'});
@@ -143,4 +144,4 @@ $(document).ready(function (e) {
 });
 
 
-$('main').load("./Map1.html");
+
