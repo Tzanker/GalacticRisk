@@ -13,7 +13,9 @@ var selection = {
 };
 
 function makeSystem(x, y, name, color) {
-    var system = '<system style="width: 30px; height:30px;  position: absolute; left: ' + x + '%; top: ' + y + '%" >' +
+    let wh = 1.5
+    let bias = wh/2;
+    var system = '<system style="width: ' + wh +'%; height:' + wh +'%; display: inline-block;  position: absolute; left: ' + (x - bias)  + '%; top: ' + (y- bias) + '%" >' +
         '<planet class = "my-auto mx-0 rounded-circle" style="background-color: ' + color + '; display: inline-block; width: 100%; height: 100%" >' +
         '</planet>' +
         name +
@@ -73,10 +75,23 @@ function makePath(system1, system2, color){
 }
 
 var line, isDown;
+
 var cw = $('color').width();
 $('color').css({'height': cw + 'px'});
+var cw = $('system').width();
+$('system').css({'height': cw + 'px'});
+
+
+
 
 $(document).ready(function (e) {
+    $(window).on('resize', function (e) {
+        var cw = $('color').width();
+        $('color').css({'height': cw + 'px'});
+        var cw = $('system').width();
+        $('system').css({'height': cw + 'px'});
+    })
+
 
 
     $("map").on("click", function (e) {
@@ -85,10 +100,12 @@ $(document).ready(function (e) {
             if (e.target == this) {
                 let name = prompt("fill in System name");
 
-                let xPosCent = (e.pageX - $(this).offset().left) * 100 / $(document).width();
-                let yPosCent = (e.pageY - $(this).offset().top) * 100 / $(document).height();
+                let xPosCent = (e.pageX) * 100 / $(document).width();
+                let yPosCent = (e.pageY) * 100 / $(document).height();
                 if (name) {
                     $(this).append(makeSystem(xPosCent, yPosCent, name, currPMode.color));
+                    var cw = $('system').width();
+                    $('system').css({'height': cw + 'px'});
                 }
             }
         }
@@ -125,3 +142,5 @@ $(document).ready(function (e) {
     });
 });
 
+
+$('main').load("./Map1.html");
