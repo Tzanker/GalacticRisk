@@ -1,7 +1,26 @@
+import sys
+from app.utils import *
 from app import app
-from flask import render_template
+from flask import render_template, jsonify
+from app.models import Army
 import codecs
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template("index.html")
+    script = "../static/js/MapRegular.js"
+    return render_template("index.html", mapScript=script)
+
+@app.route('/mapMaker')
+def maker():
+    script = "../static/js/MapMaker.js"
+    return render_template("index.html", mapScript=script)
+
+@app.route('/army')
+def army():
+    return render_template("Army.html")
+
+@app.route('/getArmy',methods=["GET"])
+def getarmy():
+    army = fullArmy()
+    jsoned=jsonify(army)
+    return jsoned
