@@ -15,7 +15,10 @@ var selection = {
 var line, isDown;
 $('map').load("/static/Map1.html");
 
-
+var cw = $('color').width();
+    $('color').css({'height': cw + 'px'});
+var cw = $('system').width();
+    $('system').css({'height': cw + 'px'});
 
 
 

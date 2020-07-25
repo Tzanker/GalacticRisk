@@ -24,3 +24,7 @@ def getarmy():
     army = fullArmy()
     jsoned=jsonify(army)
     return jsoned
+@app.route('/dev')
+def dev():
+    script = "../static/js/mapAssembler.js"
+    return render_template("index.html", mapScript=script)

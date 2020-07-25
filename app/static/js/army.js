@@ -1,6 +1,6 @@
-$("map").innerHTML="ok at least this worked"
+
 import {getArmy} from "./Fetch.js";
-$("map").innerHTML="interesting"
+
 
 async function displayArmy(){
     let army = await getArmy();

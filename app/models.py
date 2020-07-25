@@ -7,6 +7,7 @@ class Army(db.Model):
     troops = db.relationship('Troop', backref='army', lazy='dynamic')
     specials = db.relationship('Special', backref='army', lazy='dynamic')
     ships = db.relationship('Ship', backref='army', lazy='dynamic')
+    system_id = db.Column(db.Integer, db.ForeignKey('system.id'))
     def __repr__(self):
         return '<Troops {}>'.format(self.troops)
 
@@ -83,4 +84,46 @@ class Ship(db.Model):
             'building': self.building,
             'number':self.number,
             'army':self.army_id
+        }
+
+class System(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    color = db.Column(db.String)
+    name = db.Column(db.String)
+    xCoord = db.Column(db.Integer)
+    yCoord = db.Column(db.Integer)
+    owner = db.Column(db.String)
+    details = db.Column(db.String)
+    army = db.relationship('Army', backref='system', lazy='dynamic')
+    def __repr__(self):
+        return '<Name: {} Status: {}>'.format(self.name, self.owned)
+
+    def getDict(self):
+        return{
+            'id': self.id,
+            'color': self.color,
+            "x": self.xCoord,
+            "y": self.yCoord,
+            'name': self.name,
+            'details':self.details,
+            'army':self.army,
+            'owner': self.owner
+        }
+
+class Path(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    x1Coord = db.Column(db.Integer)
+    y1Coord = db.Column(db.Integer)
+    x2Coord = db.Column(db.Integer)
+    y2Coord = db.Column(db.Integer)
+    def __repr__(self):
+        return '<id: {}>'.format(self.id)
+
+    def getDict(self):
+        return{
+            'id': self.id,
+            "x1": self.x1Coord,
+            "x2": self.x2Coord,
+            "y1": self.y1Coord,
+            "y2": self.y2Coord,
         }

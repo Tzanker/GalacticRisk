@@ -19,3 +19,6 @@ def attachToArmy(armyId):
         sp.army_id=armyId
         db.session.add(sp)
     db.session.commit()
+
+
+
