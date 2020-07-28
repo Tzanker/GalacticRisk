@@ -3,6 +3,11 @@ from app import db
 def fullArmy(): #Returns Nested Dictionaries of full army
     army = Army.query.first()
     return army.getDict()
+def getSystems():
+    systems = []
+    for system in  System.query.all():
+        systems.append(system.getDict())
+    return systems
 
 
 def attachToArmy(armyId):

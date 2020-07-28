@@ -117,3 +117,38 @@ body {
     box-sizing: border-box; /* Include padding and border in element's width and height */
 
 }
+.system_svg{
+    height:3vw;
+    width:3vw;
+}
+.system{
+    display: inline-block;
+    position: absolute;
+    -moz-transform-origin: top left;
+    position: absolute;
+    font-size: 12px;
+}
+.map{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.system .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+.system:hover .tooltiptext {
+  visibility: visible;
+}

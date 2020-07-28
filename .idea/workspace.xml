@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1209d4c-50d2-42ce-8d44-070ed81a2d0f" name="Default Changelist" comment="">
+    <list default="true" id="a1209d4c-50d2-42ce-8d44-070ed81a2d0f" name="Default Changelist" comment="Ive b">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/Fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/Fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/mapAssembler.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/mapAssembler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -24,15 +34,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Teva Work &amp; School Files/Coding/HTML/Looks good" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,18 +51,20 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="C:\Users\teva\AppData\Local\JetBrains\Toolbox\apps\PyCharm-P\ch-0\201.7223.92\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\webApps\GalacticRisk\app\Templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\webApps\GalacticRisk\app\static" />
+      <recent name="C:\Code\webApps\GalacticRisk\app\Templates" />
+      <recent name="C:\Code\webApps\GalacticRisk\app\static\js" />
+      <recent name="C:\Code\webApps\GalacticRisk\app\static\css" />
+      <recent name="C:\Code\webApps\GalacticRisk\app" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -66,7 +78,16 @@
       <updated>1595209263309</updated>
       <workItem from="1595209264435" duration="14418000" />
       <workItem from="1595260678933" duration="13609000" />
-      <workItem from="1595278305575" duration="3860000" />
+      <workItem from="1595278305575" duration="4951000" />
+      <workItem from="1595284428559" duration="3396000" />
+      <workItem from="1595287887860" duration="22121000" />
+      <workItem from="1595374624993" duration="14895000" />
+      <workItem from="1595618782625" duration="24038000" />
+      <workItem from="1595725180145" duration="7000" />
+      <workItem from="1595725205753" duration="4863000" />
+      <workItem from="1595870810045" duration="5289000" />
+      <workItem from="1595955532867" duration="406000" />
+      <workItem from="1595955959322" duration="3117000" />
     </task>
     <task id="LOCAL-00001" summary="Added A default map, next step at this point will be to start a backend">
       <created>1595283000268</created>
@@ -75,28 +96,72 @@
       <option name="project" value="LOCAL" />
       <updated>1595283000268</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Are you a ass man or a tits man? well its your lucky day! this project has a front end and a back end!">
+      <created>1595289530744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595289530744</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added a database and set up a simple fetchArmy()">
+      <created>1595347940432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595347940432</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated the database with some system points as well as playing with the system/planet icon">
+      <created>1595641674564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595641674564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added A default map, next step at this point will be to start a backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added A default map, next step at this point will be to start a backend" />
+    <MESSAGE value="Are you a ass man or a tits man? well its your lucky day! this project has a front end and a back end!" />
+    <MESSAGE value="Added a database and set up a simple fetchArmy()" />
+    <MESSAGE value="Updated the database with some system points as well as playing with the system/planet icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the database with some system points as well as playing with the system/planet icon" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595214473424">
+    <state x="225" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595284233215">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1595214473424" />
-    <state x="393" y="29" key="CommitChangelistDialog2" timestamp="1595282999518">
+    <state x="225" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1595284233215" />
+    <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595622291860">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1595282999518" />
+    <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1595622291860" />
+    <state x="301" y="3" key="CommitChangelistDialog2" timestamp="1595907002728">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="301" y="3" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1595907002728" />
     <state x="550" y="189" key="FileChooserDialogImpl" timestamp="1595214923571">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="550" y="189" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1595214923571" />
+    <state width="268" height="456" key="HiddenNamespacesPopup" timestamp="1595293866147">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="268" height="456" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1595293866147" />
+    <state x="172" y="20" key="SettingsEditor" timestamp="1595726544621">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="172" y="20" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1595726544621" />
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1595641676524">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1595641676524" />
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1595904732887">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1595904732887" />
   </component>
 </project>

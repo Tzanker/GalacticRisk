@@ -106,7 +106,6 @@ class System(db.Model):
             "y": self.yCoord,
             'name': self.name,
             'details':self.details,
-            'army':self.army,
             'owner': self.owner
         }
 

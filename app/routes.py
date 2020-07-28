@@ -1,4 +1,3 @@
-import sys
 from app.utils import *
 from app import app
 from flask import render_template, jsonify
@@ -28,3 +27,7 @@ def getarmy():
 def dev():
     script = "../static/js/mapAssembler.js"
     return render_template("index.html", mapScript=script)
+@app.route('/getMap')
+def getMap():
+    systems = getSystems()
+    return jsonify(systems)
