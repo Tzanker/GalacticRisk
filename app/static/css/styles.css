@@ -136,20 +136,16 @@ body {
     width: 100%;
 }
 
-.system .tooltiptext {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -50%;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
+.vis-tooltip {
+    background: #3d3d3d !important;
+    color: white!important;
+    border-color: #327ba7!important;
 }
-.system:hover .tooltiptext {
-  visibility: visible;
+.tooltip-hr{
+    height: 0px;
+    border-width:1px;
+    color:#327ba7;
+    background-color: #327ba7;
+    border-color: #327ba7;
 }
+
