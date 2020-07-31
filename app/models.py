@@ -85,7 +85,6 @@ class Ship(db.Model):
             'number':self.number,
             'army':self.army_id
         }
-
 class System(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     color = db.Column(db.String)
@@ -94,7 +93,8 @@ class System(db.Model):
     yCoord = db.Column(db.Integer)
     owner = db.Column(db.String)
     details = db.Column(db.String)
-    army = db.relationship('Army', backref='system', lazy='dynamic')
+    armies = db.relationship('Army', backref='system', lazy='dynamic')
+    paths = db.relationship('SysPath', backref='system', lazy='dynamic')
     def __repr__(self):
         return '<Name: {} Status: {}>'.format(self.name, self.owned)
 
@@ -108,21 +108,17 @@ class System(db.Model):
             'details':self.details,
             'owner': self.owner
         }
-
+class SysPath(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    system_id = db.Column(db.Integer, db.ForeignKey('system.id'))
+    path_id = db.Column(db.Integer, db.ForeignKey('path.id'))
 class Path(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    x1Coord = db.Column(db.Integer)
-    y1Coord = db.Column(db.Integer)
-    x2Coord = db.Column(db.Integer)
-    y2Coord = db.Column(db.Integer)
+    systems = db.relationship('SysPath', backref='path', lazy='dynamic')
     def __repr__(self):
         return '<id: {}>'.format(self.id)
 
     def getDict(self):
         return{
             'id': self.id,
-            "x1": self.x1Coord,
-            "x2": self.x2Coord,
-            "y1": self.y1Coord,
-            "y2": self.y2Coord,
         }

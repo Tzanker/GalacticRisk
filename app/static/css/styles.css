@@ -117,13 +117,14 @@ body {
     box-sizing: border-box; /* Include padding and border in element's width and height */
 
 }
+.new {}
 .system_svg{
-    height:3vw;
-    width:3vw;
+    height:2vw;
+    width:2vw;
+    display: block;
 }
 .system{
     display: inline-block;
-    position: absolute;
     -moz-transform-origin: top left;
     position: absolute;
     font-size: 12px;
@@ -144,7 +145,7 @@ body {
   border-radius: 6px;
   bottom: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -50%;
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;

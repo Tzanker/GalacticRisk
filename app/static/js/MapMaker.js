@@ -25,23 +25,23 @@ function getPos(system1, system2){
     let sys1Pos;
     let sys2Pos;
     let flip=0;
-    if(system1.offset().left < system2.offset().left){
-        if(system1.offset().top < system2.offset().top){
-            sys1Pos = [(system1.offset().left + system1.width()) * 100 / $(document).width(),(system1.offset().top + system1.height()) * 100 / $(document).height()];
-            sys2Pos = [(system2.offset().left) * 100 / $(document).width(), (system2.offset().top) * 100 / $(document).height()];
+    if(system1.position().left < system2.position().left){
+        if(system1.position().top < system2.position().top){
+            sys1Pos = [(system1.position().left + system1.width()) * 100 / $("map").width(),(system1.position().top + system1.height()) * 100 / $("map").height()];
+            sys2Pos = [(system2.position().left) * 100 / $("map").width(), (system2.position().top) * 100 / $("map").height()];
         } else {
-            sys1Pos = [(system1.offset().left + system1.width()) * 100 / $(document).width(),(system1.offset().top) * 100 / $(document).height()];
-            sys2Pos = [(system2.offset().left) * 100 / $(document).width(), (system2.offset().top + system2.height()) * 100 / $(document).height()];
+            sys1Pos = [(system1.position().left + system1.width()) * 100 / $("map").width(),(system1.position().top) * 100 / $("map").height()];
+            sys2Pos = [(system2.position().left) * 100 / $("map").width(), (system2.position().top + system2.height()) * 100 / $("map").height()];
             flip=1;
         }
-    } else  if(system1.offset().left > system2.offset().left) {
-        if (system1.offset().top < system2.offset().top) {
-            sys1Pos = [(system1.offset().left) * 100 / $(document).width(), (system1.offset().top + system1.height()) * 100 / $(document).height()];
-            sys2Pos = [(system2.offset().left + system2.width()) * 100 / $(document).width(), (system2.offset().top) * 100 / $(document).height()];
+    } else  if(system1.position().left > system2.position().left) {
+        if (system1.position().top < system2.position().top) {
+            sys1Pos = [(system1.position().left) * 100 / $("map").width(), (system1.position().top + system1.height()) * 100 / $("map").height()];
+            sys2Pos = [(system2.position().left + system2.width()) * 100 / $("map").width(), (system2.position().top) * 100 / $("map").height()];
             flip=1;
         } else {
-            sys1Pos = [(system1.offset().left) * 100 / $(document).width(), (system1.offset().top) * 100 / $(document).height()];
-            sys2Pos = [(system2.offset().left + system2.width()) * 100 / $(document).width(), (system2.offset().top + system2.height()) * 100 / $(document).height()];
+            sys1Pos = [(system1.position().left) * 100 / $("map").width(), (system1.position().top) * 100 / $("map").height()];
+            sys2Pos = [(system2.position().left + system2.width()) * 100 / $("map").width(), (system2.position().top + system2.height()) * 100 / $("map").height()];
 
         }
     }
@@ -101,10 +101,10 @@ $(document).ready(function (e) {
             if (e.target == this) {
                 let name = prompt("fill in System name");
 
-                let xPosCent = (e.pageX) * 100 / $(document).width();
-                let yPosCent = (e.pageY) * 100 / $(document).height();
+                let xPosCent = (e.pageX -  $('map').offset().left) * 100 / $('map').width();
+                let yPosCent = (e.pageY - $('map').offset().top) * 100 / $('map').height();
                 if (name) {
-                    $(this).append(makeSystem(xPosCent, yPosCent, name, currPMode.color));
+                    $('map').append(makeSystem(xPosCent, yPosCent, name, currPMode.color));
                     var cw = $('system').width();
                     $('system').css({'height': cw + 'px'});
                 }
@@ -129,7 +129,7 @@ $(document).ready(function (e) {
     });
     $("map").on("click", "line", function (e) {
         if (currPMode.mode == "path") {
-            $(this).remove();
+            $(this).parent().remove();
         }
     });
 
