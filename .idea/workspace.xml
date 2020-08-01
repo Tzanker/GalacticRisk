@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1209d4c-50d2-42ce-8d44-070ed81a2d0f" name="Default Changelist" comment="This is just to save before i try some wacky shit">
+    <list default="true" id="a1209d4c-50d2-42ce-8d44-070ed81a2d0f" name="Default Changelist" comment="Vis JS seems to be the best option for this so far">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/static/js/mapAssembler.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/mapAssembler.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +87,7 @@
       <workItem from="1596160635336" duration="90000" />
       <workItem from="1596170146514" duration="7934000" />
       <workItem from="1596224303764" duration="6066000" />
-      <workItem from="1596235777911" duration="2095000" />
+      <workItem from="1596235777911" duration="5344000" />
     </task>
     <task id="LOCAL-00001" summary="Added A default map, next step at this point will be to start a backend">
       <created>1595283000268</created>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596174822469</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Vis JS seems to be the best option for this so far">
+      <created>1596238424970</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596238424970</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +151,8 @@
     <MESSAGE value="Updated the database with some system points as well as playing with the system/planet icon" />
     <MESSAGE value="Finally got a basic tooltip working as well as changing the way SVGs are scaled" />
     <MESSAGE value="This is just to save before i try some wacky shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="This is just to save before i try some wacky shit" />
+    <MESSAGE value="Vis JS seems to be the best option for this so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vis JS seems to be the best option for this so far" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595284233215">
@@ -157,10 +163,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1595622291860" />
-    <state x="301" y="3" key="CommitChangelistDialog2" timestamp="1596178745023">
+    <state x="301" y="3" key="CommitChangelistDialog2" timestamp="1596238432397">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="301" y="3" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1596178745023" />
+    <state x="301" y="3" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1596238432397" />
     <state x="550" y="189" key="FileChooserDialogImpl" timestamp="1595214923571">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -169,14 +175,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="268" height="456" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1595293866147" />
+    <state x="584" y="136" key="RollbackChangesDialog" timestamp="1596239832134">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="584" y="136" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1596239832134" />
     <state x="172" y="20" key="SettingsEditor" timestamp="1595726544621">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="172" y="20" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1595726544621" />
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1596174850142">
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1596239853736">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1596174850142" />
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1596239853736" />
     <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1595904732887">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
