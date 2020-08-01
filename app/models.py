@@ -116,9 +116,11 @@ class Path(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     systems = db.relationship('SysPath', backref='path', lazy='dynamic')
     def __repr__(self):
-        return '<id: {}>'.format(self.id)
+        return '<id:{}>'.format(self.id)
 
     def getDict(self):
         return{
             'id': self.id,
+            'to': self.systems[0].system_id,
+            'from': self.systems[1].system_id,
         }

@@ -1,6 +1,6 @@
 from app.utils import *
 from app import app
-from flask import render_template, jsonify
+from flask import render_template, jsonify, request
 from app.models import Army
 import codecs
 @app.route('/')
@@ -30,4 +30,9 @@ def dev():
 @app.route('/getMap')
 def getMap():
     systems = getSystems()
-    return jsonify(systems)
+    paths = getPaths()
+    return jsonify({'nodes': systems, 'edges': paths})
+@app.route('/saveMap/',methods=["POST"])
+def saveMap():
+    savePathAndNodes(request.json)
+    return "true"
