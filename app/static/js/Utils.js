@@ -1,4 +1,21 @@
-
+function replaceBetween(origin, startIndex, endIndex, insertion) {
+    return origin.substring(0, startIndex) + insertion + origin.substring(endIndex);
+}
+export function stringToHTML(str) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(str, 'text/html');
+    return doc;
+};
+var support = (function () {
+    if (!window.DOMParser) return false;
+    var parser = new DOMParser();
+    try {
+        parser.parseFromString('x', 'text/html');
+    } catch(err) {
+        return false;
+    }
+    return true;
+})();
 
 function getPixels(img,ctx,canvas)
 {
