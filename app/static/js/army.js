@@ -5,20 +5,28 @@ import {getArmy} from "./Fetch.js";
 async function displayArmy(){
     let army = await getArmy();
     console.log(army);
-    //Troops
-    let troops = troopsHTML(army)
-    $('main').append(troops);
-    //ships
-    let ships = shipsHTML(army)
-    $('main').append(ships);
-    //special
-    let special = specialHTML(army)
-    $('main').append(special);
+    for (let index in army.divisions) {
+        //Troops
+        $('main').append('<div id="division_'+army.divisions[index].id+'" class="army_division"> ' +
+                    '<h2 class="text-left">\n' +
+                    '  Division '+army.divisions[index].id+
+                    '  <small class="text-muted">location: '+army.divisions[index].system_id+'</small>\n' +
+                    '</h2>');
+
+        let troops = troopsHTML(army.divisions[index].Troops)
+        $('#division_'+army.divisions[index].id).append(troops);
+        //ships
+        let ships = shipsHTML(army.divisions[index].Ships)
+        $('#division_'+army.divisions[index].id).append(ships);
+        //special
+        let special = specialHTML(army.divisions[index].Specials)
+        $('#division_'+army.divisions[index].id).append(special);
+    }
 }
 
-function troopsHTML(army){
+function troopsHTML(troops){
         let troopHTML=''
-    army.Troops.map(troop=>{
+        troops.map(troop=>{
         let html =  '    <tr>\n' +
                     '      <th scope="row">' + troop.id  + '</th>\n' +
                     '      <td>' + troop.type  + '</td>\n' +
@@ -48,9 +56,9 @@ function troopsHTML(army){
     return combinedHTML
 }
 
-function shipsHTML(army){
+function shipsHTML(ships){
         let shipsHTML=''
-    army.Ships.map(ship=>{
+        ships.map(ship=>{
         let html =  '    <tr>\n' +
                     '      <th scope="row">' + ship.id  + '</th>\n' +
                     '      <td>' + ship.type  + '</td>\n' +
@@ -79,9 +87,9 @@ function shipsHTML(army){
     return combinedHTML
 }
 
-function specialHTML(army){
+function specialHTML(specials){
         let specialHTML=''
-    army.Specials.map(special=>{
+        specials.map(special=>{
         let html =  '    <tr>\n' +
                     '      <th scope="row">' + special.id  + '</th>\n' +
                     '      <td>' + special.name  + '</td>\n' +

@@ -375,7 +375,7 @@ for system in systems:
         top = re.findall(r'top: (.+?)%;',system['style'])
         color = re.findall(r'background-color: (.+?);',system.planet['style'])
         name= re.sub(r'\W+', '', system.get_text())
-        dbSystems.append(System(xCoord=float(left[0]), yCoord=float(top[0]), color=color[0], name=name))
+        dbSystems.append(System(xCoord=float(left[0])*20, yCoord=float(top[0])*10, color=color[0], name=name))
 db.session.add_all(dbSystems)
 db.session.commit()
 #import app.mapMigration

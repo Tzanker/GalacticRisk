@@ -9,17 +9,17 @@ def index():
     script = "../static/js/MapRegular.js"
     return render_template("index.html", mapScript=script)
 
-@app.route('/mapMaker')
-def maker():
-    script = "../static/js/MapMaker.js"
-    return render_template("index.html", mapScript=script)
-
 @app.route('/army')
 def army():
     return render_template("Army.html")
 
 @app.route('/getArmy',methods=["GET"])
 def getarmy():
+    army = fullArmy()
+    jsoned=jsonify(army)
+    return jsoned
+@app.route('/getDivision/<system>',methods=["GET"])
+def getArmyBy(system):
     army = fullArmy()
     jsoned=jsonify(army)
     return jsoned

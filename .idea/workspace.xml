@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1209d4c-50d2-42ce-8d44-070ed81a2d0f" name="Default Changelist" comment="">
+    <list default="true" id="a1209d4c-50d2-42ce-8d44-070ed81a2d0f" name="Default Changelist" comment="Final update before bed">
+      <change afterPath="$PROJECT_DIR$/app/PopulateArmy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Templates/Army.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Templates/Army.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/Templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mapMigration.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mapMigration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/js/Fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/Fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/MapMaker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/MapRegular.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/MapRegular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/army.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/army.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/static/js/mapAssembler.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/js/mapAssembler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils.py" afterDir="false" />
     </list>
@@ -47,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="ts.external.directory.path" value="C:\Users\teva\AppData\Local\JetBrains\Toolbox\apps\PyCharm-P\ch-0\201.7223.92\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -91,7 +98,9 @@
       <workItem from="1596160635336" duration="90000" />
       <workItem from="1596170146514" duration="7934000" />
       <workItem from="1596224303764" duration="6066000" />
-      <workItem from="1596235777911" duration="18093000" />
+      <workItem from="1596235777911" duration="18826000" />
+      <workItem from="1596296432432" duration="17878000" />
+      <workItem from="1596316264895" duration="12166000" />
     </task>
     <task id="LOCAL-00001" summary="Added A default map, next step at this point will be to start a backend">
       <created>1595283000268</created>
@@ -149,7 +158,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596241710754</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Got a full map going with Vis, Yay">
+      <created>1596257442991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596257442991</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Enabled color and name changing for front end (back end does not save this change yet)">
+      <created>1596312175520</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596312175520</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,21 +187,27 @@
     <MESSAGE value="This is just to save before i try some wacky shit" />
     <MESSAGE value="Vis JS seems to be the best option for this so far" />
     <MESSAGE value="Got a crude  path and system editor finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got a crude  path and system editor finished" />
+    <MESSAGE value="Got a full map going with Vis, Yay" />
+    <MESSAGE value="Enabled color and name changing for front end (back end does not save this change yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled color and name changing for front end (back end does not save this change yet)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595284233215">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="225" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1595284233215" />
+    <state x="475" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596317566290">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="475" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1596317566290" />
     <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595622291860">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="672" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1595622291860" />
-    <state x="301" y="3" key="CommitChangelistDialog2" timestamp="1596241710121">
+    <state x="301" y="3" key="CommitChangelistDialog2" timestamp="1596312174602">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="301" y="3" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1596241710121" />
+    <state x="301" y="3" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1596312174602" />
     <state x="550" y="189" key="FileChooserDialogImpl" timestamp="1595214923571">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -191,14 +220,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="584" y="136" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1596239832134" />
-    <state x="172" y="20" key="SettingsEditor" timestamp="1595726544621">
+    <state x="172" y="20" key="SettingsEditor" timestamp="1596317833667">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="172" y="20" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1595726544621" />
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1596239853736">
+    <state x="172" y="20" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1596317833667" />
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1596312228841">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1596239853736" />
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1596312228841" />
     <state x="431" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1595904732887">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

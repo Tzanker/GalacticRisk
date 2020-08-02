@@ -1,7 +1,7 @@
 from app.models import *
 from app import db
 def fullArmy(): #Returns Nested Dictionaries of full army
-    army = Army.query.first()
+    army = Army.query.all()[0]
     return army.getDict()
 def getSystems():
     systems = []
@@ -13,22 +13,6 @@ def getPaths():
     for path in Path.query.all():
         paths.append(path.getDict())
     return paths
-
-
-def attachToArmy(armyId):
-    troops = Troop.query.all()
-    ships = Ship.query.all()
-    specials = Special.query.all()
-    for t in troops:
-        t.army_id=armyId
-        db.session.add(t)
-    for s in ships:
-        s.army_id = armyId
-        db.session.add(s)
-    for sp in specials:
-        sp.army_id=armyId
-        db.session.add(sp)
-    db.session.commit()
 def savePathAndNodes(data): #TODO implement deletion of objects no longer in map
     for key in data['nodes']:
         id=data['nodes'][key]['id']
