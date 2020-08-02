@@ -38,7 +38,7 @@ async function assembleMap() {
                             hover: true,
                             dragNodes: false// do not allow dragging nodes
                         },
-                        physics: false, x: system.x, y:system.y});
+                        physics: false, x: system.xCoord, y:system.yCoord});
     }
     for (index in map.edges){
         path = map.edges[index];

@@ -60,3 +60,32 @@ export function changeColor(img, color)
     ctx.putImageData(currentPixels, 0, 0);
     return canvas.toDataURL("image/png");
 }
+export function changeSystemColor(color, img) {
+    //takes a utf-8 encoded system SVG string and a color returns the an encoded string with the color
+    console.log(color);
+    let decoded = decodeURIComponent(img);
+    let html = stringToHTML(decoded);
+    html.getElementById("system-outline-color").setAttribute("fill", color);
+    let decodedSwapped = html.body.innerHTML.split("data:image/svg+xml;charset=utf-8,")[1];
+    let url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(decodedSwapped);
+    return url
+}
+export function getSystemColor(img) {
+    //takes a utf-8 encoded system SVG string and returns the color
+    let decoded = decodeURIComponent(img);
+    let html = stringToHTML(decoded);
+    let color = html.getElementById("system-outline-color").getAttribute("fill");
+    return color
+}
+export function getNetworkNodeCharacteristics(network){
+    //Takes a dictionary of System nodes (the ._data objects) and returns a list of System Dictionaries containting:
+    //x, y, color, id and name
+    let listy = [];
+    let nodeDict = network.body.data.nodes._data;
+    Object.keys(nodeDict).forEach(function(key) {
+        let node = nodeDict[key];
+        let coords = network.getPositions(node.id)[node.id]
+        listy.push({id:node.id, name: node.label, color: getSystemColor(node.image),x: coords.x, y: coords.y});
+    });
+    return listy
+}

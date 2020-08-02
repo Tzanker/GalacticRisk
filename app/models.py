@@ -211,8 +211,8 @@ class System(db.Model):
         return{
             'id': self.id,
             'color': self.color,
-            "x": self.xCoord,
-            "y": self.yCoord,
+            "xCoord": self.xCoord,
+            "yCoord": self.yCoord,
             'name': self.name,
             'details':self.details,
             'owner': self.owner,

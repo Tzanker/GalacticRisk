@@ -17,7 +17,6 @@ export async function getMap() {
 export async function saveMap(data) {
     try {
         let json =JSON.stringify(data)
-        console.log(json)
         let res = await fetch('/saveMap', {
             method: 'POST', // or 'PUT'
             headers: {
